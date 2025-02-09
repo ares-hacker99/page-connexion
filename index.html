@@ -1,24 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Connexion à Blue Ocean</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
-<body class="h-screen flex">
-    <section class="w-1/2 h-full bg-red-500 flex items-center justify-center">
-        <img class="w-4/5 h-4/5 " src="./assets/img/homme.svg" alt="">
-    </section>
 
+<body class="flex items-center justify-center min-h-screen bg-white">
 
-    <section class="w-1/2 bg-blue-500 flex justify-center">
-        <div class="w-">
-            <div>
-                <h1>Connexion a Blue Ocean</h1>
-            </div>
-            
+    <div class="flex flex-col md:flex-row w-full max-w-4xl bg-white  rounded-lg overflow-hidden">
+
+        <!-- Section 1: présentant l'image -->
+        <div class="hidden md:block md:w-1/2 bg-cover bg-center"
+            style="background-image: url('./assets/img/homme.svg');">
         </div>
-    </section>
+
+        <!-- Section 2 : pour se connecter -->
+        <div class="w-full h-full md:w-1/2 p-8 space-x-4 ">
+            <h2 class="text-[2rem] w-full text-center text-top-[3rem] py-[2rem] font-bold text-[ #19192C] mb-6">Connexion à Blue Ocean</h2>
+
+            <form class="w-full" action="#" method="POST">
+                <!-- Email -->
+                <div class="space-y-4">
+                    <!-- zone pour l'Email -->
+                    <div class="flex items-center border border-gray-300 rounded-lg px-3 py-2">
+                        <img src="./assets/img/message.svg" alt="Email" class="w-5 h-5 opacity-50">
+                        <input type="email" placeholder="abc@example.com" 
+                            class="ml-2 w-full outline-none bg-transparent text-gray-600 placeholder-gray-400">
+                    </div>
+                
+                    <!-- zone pour le mot de passe -->
+                    <div class="flex items-center border border-gray-300 rounded-lg px-3 py-2">
+                        <img src="./assets/img/cadenas.svg" alt="Mot de passe" class="w-5 h-5 opacity-50">
+                        <input type="password" placeholder="••••••••" 
+                            class="ml-2 w-full outline-none bg-transparent text-gray-600 placeholder-gray-400">
+                    </div>
+                </div>
+                <!-- Zone pour le mot de passe oublié -->
+                <div class="mb-4 text-right">
+                    <a href="#" class="text-[#8EA7E9] py-2 text-sm hover:underline">Mot de passe oublié ?</a>
+                </div>
+
+                <!-- Bouton Connexion -->
+                <button type="submit" class="w-48 text-center px-4 py-2 bg-[#7286D3] text-white py-2 rounded-lg mx-auto block hover:bg-blue-600 transition">Connexion</button>
+            </form>
+
+            <!-- zonne de google facebook github -->
+            <div class="mt-6 text-center w-full gap-2">
+
+                <div class="flex items-center">
+                    <div class="flex-1 border-t border-[#9E9E9F]"></div>
+                    <span class="mx-4 text-[#19192C] mb-2">Ou avec :</span>
+                    <div class="flex-1 border-t border-[#9E9E9F]"></div>
+                </div>
+
+                <div class="flex justify-between">
+                    <a href="#" class="p-2 border-[#D9D9D9] bg-[#FFF2F28A] rounded-full hover:bg-gray-100 transition">
+                        <img src="./assets/img/chercher 1.svg" alt="Google">
+                    </a>
+                    <a href="#" class="p-2 border-[#D9D9D9] bg-[#FFF2F28A] rounded-full hover:bg-gray-100 transition">
+                        <img src="./assets/img/facebook 1.svg" alt="Facebook">
+                    </a>
+                    <a href="#" class="p-2 border-[#D9D9D9] bg-[#FFF2F28A] rounded-full hover:bg-gray-100 transition">
+                        <svg class="w-16 h-16 fill-current text-gray-900" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" 
+                              d="M12 0C5.372 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.385.6.111.793-.261.793-.577v-2.157c-3.338.724-4.042-1.415-4.042-1.415-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.204.085 1.84 1.238 1.84 1.238 1.07 1.834 2.809 1.304 3.494.997.108-.776.42-1.305.762-1.604-2.665-.302-5.466-1.333-5.466-5.93 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.52.117-3.168 0 0 1.008-.322 3.3 1.23a11.53 11.53 0 0 1 3.003-.404c1.02.005 2.047.137 3.003.404 2.292-1.552 3.297-1.23 3.297-1.23.654 1.648.243 2.865.12 3.168.77.84 1.235 1.911 1.235 3.221 0 4.61-2.807 5.625-5.48 5.92.43.372.823 1.103.823 2.222v3.293c0 .319.192.694.8.577C20.565 21.796 24 17.302 24 12c0-6.627-5.373-12-12-12Z"/>
+                          </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
