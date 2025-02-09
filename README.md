@@ -1,7 +1,7 @@
 
 ## Authors
 
--[@ares-hacker99]https://github.com/ares-hacker99)
+-[@ares-hacker99](https://github.com/ares-hacker99)
 
 ## Tech Stack
 
